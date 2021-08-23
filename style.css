@@ -1,0 +1,29 @@
+body {
+    background-size: cover;
+    background-position: center;
+}
+
+.backdrop{
+    background-color: linear-gradient(to right top, #6633f1, #d925ca, #18b6c1, #3daa0a, #00947b);
+}
+
+
+.heading {
+    font-size: 35px;
+    width: 100%;
+    margin: 0px;
+}
+
+#status {
+    font-size: 18px;
+}
+
+canvas {
+    border: 2px black solid;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 20px;
+}
+
+.btn-danger{
+    font-size: 30px;
+}
