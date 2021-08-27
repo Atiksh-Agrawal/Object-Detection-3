@@ -1,6 +1,16 @@
+status = "";
+
+objects = [];
+
+function back()
+{
+    window.location = "index.html";
+}
+
 function preload(){
     img1 = loadImage("2-500x500.jpg");
     img2 = loadImage("Tv_ac.PNG");
+    img3 = loadImage("ImgW.jpg");
 }
 
 function setup(){
@@ -17,7 +27,7 @@ function draw(){
     if(status != ""){
         for(i=0 ; i<objects.length ; i++){
           document.getElementById("status").innerHTML = "Status : Object detected !" ;
-          document.getElementById("num_of_objects").innerHTML = "Number of objects detected : " + objects.length ;
+          document.getElementById("num_of_objects").innerHTML = "There are 22 objects out of which cocossd detected" + objects.length ;
           percent = floor(objects[i].confidence * 100);
           fill("red");
           stroke("red");
